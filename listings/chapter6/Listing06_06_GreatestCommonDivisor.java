@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ch6_Listing_6_6_GreatestCommonDivisor {
+public class Listing06_06_GreatestCommonDivisor {
 
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);

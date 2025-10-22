@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ch6_Listing_6_12_PrintCalendar {
+public class Listing06_12_PrintCalendar {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 

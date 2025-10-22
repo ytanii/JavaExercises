@@ -1,5 +1,5 @@
 
-public class Ch6_Listing_6_10_RandomCharacter {
+public class Listing06_10_RandomCharacter {
   public static void main(String[] args) {
 
     for (int i = 0; i < 175; i++) {

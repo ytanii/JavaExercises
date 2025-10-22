@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ch6_Listing_6_8_HexToDec {
+public class Listing06_08_HexToDec {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 

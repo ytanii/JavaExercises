@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ch5_Listing5_14_Palindrome {
+public class Listing05_14_Palindrome {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 

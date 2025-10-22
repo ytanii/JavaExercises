@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ch6_Listing_6_7_PrimeNumberMethod {
+public class Listing06_07_PrimeNumberMethod {
 
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);

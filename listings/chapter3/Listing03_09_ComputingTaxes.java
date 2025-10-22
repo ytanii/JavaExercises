@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ch2_3_9ComputingTaxes {
+public class Listing03_09_ComputingTaxes {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 

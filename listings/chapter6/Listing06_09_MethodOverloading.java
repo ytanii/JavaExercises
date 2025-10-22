@@ -1,5 +1,5 @@
 
-public class Ch6_Listing_6_9_MethodOverloading {
+public class Listing06_09_MethodOverloading {
   public static void main(String[] args) {
     System.out.println("The maximum of 3 and 4 is " + max(3, 4));
     System.out.println("The maximum of 3.0 and 5.4 is " + max(3.0, 5.4));

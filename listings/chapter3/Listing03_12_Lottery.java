@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ch2_3_12Lottery {
+public class Listing03_12_Lottery {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 
