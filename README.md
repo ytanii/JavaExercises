@@ -6,5 +6,13 @@ A collection of Java exercises completed while studying Introduction to Java Pro
 Each folder represents a full chapter.
 
 For example:
-- chapter3/Ex03_12_Name.java
+- `chapter3/Ex03_12_Name.java`
 
+Listings from the textbook are kept separately in the **listings** directory, organized by chapter.
+
+For example:
+- `listings/chapter5/Listing05_10_FutureTuition.java`
+
+## Contents
+- **Exercises:** Solutions to end-of-chapter problems.
+- **Listings:** Example programs from the textbook rewritten.
