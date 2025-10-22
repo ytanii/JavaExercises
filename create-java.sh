@@ -4,9 +4,12 @@ if [ $# -eq 0 ]; then
     exit 1
 fi
 CLASS_NAME=$1
+TARGET_DIR=${2:-.}
 FILE_NAME="${CLASS_NAME}.java"
 
-cat > "$FILE_NAME" << EOF
+mkdir -p "$TARGET_DIR"
+
+cat > "${TARGET_DIR}/${FILE_NAME}" << EOF
 import java.util.Scanner;
 
 public class $CLASS_NAME {
@@ -17,4 +20,4 @@ public class $CLASS_NAME {
 }
 EOF
 
-echo "Created $FILE_NAME with class $CLASS_NAME"
+echo "Created ${TARGET_DIR}/${FILE_NAME} with class $CLASS_NAME"
