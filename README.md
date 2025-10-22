@@ -16,3 +16,12 @@ For example:
 ## Contents
 - **Exercises:** Solutions to end-of-chapter problems.
 - **Listings:** Example programs from the textbook rewritten.
+
+## Progress
+- [x] Chapter 1  
+- [x] Chapter 2  
+- [x] Chapter 3  
+- [x] Chapter 4  
+- [x] Chapter 5  
+- [x] Chapter 6  
+- [ ] Chapter 7
