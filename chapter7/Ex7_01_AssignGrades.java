@@ -48,7 +48,7 @@ public class Ex7_01_AssignGrades {
 
     }
 
-    public static void displayGrades(int[] scores) {g
+    public static void displayGrades(int[] scores) {
         for (int i = 0; i < scores.length; i++) {
             System.out.println("Student " + i + " score is " + scores[i] + " and grade is " + getGrade(scores, i));
         }
