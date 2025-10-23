@@ -7,7 +7,6 @@ public class Ex7_06_PrimeNumbersArray {
 
         int[] primes = new int[50];
         primes[0] = 2;
-        int index = 0;
         int k = 0;
 
         for (int i = 3; primes[49] == 0; i++) {
