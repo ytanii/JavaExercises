@@ -29,7 +29,7 @@ public class Ex6_38_RandomCharacters {
     }
 
     public static char generateRandomCharacter(char ch1, char ch2){
-        return (char)((Math.random()*(ch2 - ch1))+ch1);
+        return (char)((Math.random()*(ch2 - ch1 + 1))+ch1);
     }
 
 }
