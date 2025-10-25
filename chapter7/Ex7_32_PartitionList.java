@@ -5,12 +5,23 @@ public class Ex7_32_PartitionList {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int[] list = {5,2,9,3,6,8};
+        System.out.print("Enter list size: ");
 
+        int[] list = new int[scanner.nextInt()];
+
+
+
+        System.out.print("Enter list content: ");
+        for(int i = 0; i < list.length; i++){
+            list[i] = scanner.nextInt();
+        }
 
         partition(list);
 
-        System.out.println(Arrays.toString(list));
+        System.out.print("After the partition, the list is ");
+        for(int i = 0; i < list.length; i++){
+            System.out.print(list[i] + " ");
+        }
 
     }
 
