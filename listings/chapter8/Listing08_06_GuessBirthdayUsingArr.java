@@ -55,8 +55,4 @@ public class Listing08_06_GuessBirthdayUsingArr {
 
     }
 
-    int day = 0;
-    int answer = 0;
-
-
 }
