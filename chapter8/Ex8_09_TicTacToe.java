@@ -6,7 +6,7 @@ public class Ex8_09_TicTacToe {
         char[][] ticTacToeBoard = new char[3][3];
 
         int i = 0;
-        int lastPlayer = ' ';
+        char lastPlayer = ' ';
 
         while (!isWinner(ticTacToeBoard) && !isDraw(ticTacToeBoard)) {
 
@@ -25,7 +25,7 @@ public class Ex8_09_TicTacToe {
             if (i % 2 == 0) {
                 System.out.println("Enter a row (0, 1, or 2) for player X");
                 int row = scanner.nextInt();
-                System.out.println("Enter a row (0, 1, or 2) for play X");
+                System.out.println("Enter a column (0, 1, or 2) for play X");
                 int column = scanner.nextInt();
                 updateTicTacToeBoard(ticTacToeBoard, row, column, 0);
                 lastPlayer = 'X';
@@ -34,7 +34,7 @@ public class Ex8_09_TicTacToe {
             } else {
                 System.out.println("Enter a row (0, 1, or 2) for player O");
                 int row = scanner.nextInt();
-                System.out.println("Enter a row (0, 1, or 2) for play O");
+                System.out.println("Enter a column (0, 1, or 2) for play O");
                 int column = scanner.nextInt();
                 updateTicTacToeBoard(ticTacToeBoard, row, column, 1);
                 lastPlayer = 'O';
@@ -58,7 +58,7 @@ public class Ex8_09_TicTacToe {
 
 
         if (isWinner(ticTacToeBoard)) {
-            System.out.println((char) lastPlayer + " player won");
+            System.out.println(lastPlayer + " player won");
         } else {
             System.out.println("Its a draw");
         }
