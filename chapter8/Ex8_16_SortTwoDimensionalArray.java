@@ -1,8 +1,5 @@
-import java.util.Scanner;
-
 public class Ex8_16_SortTwoDimensionalArray {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
         int[][] twoDimensionalArray = {{4, 2}, {1, 7}, {4, 5}, {1, 2}, {1, 1}, {4, 1}};
 
