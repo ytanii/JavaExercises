@@ -17,9 +17,11 @@ public class Ex8_29_IdenticalArrays {
     public static int[][] getMatrix() {
         Scanner input = new Scanner(System.in);
         int[][] m = new int[3][3];
-        for (int i = 0; i < m.length; i++)
-            for (int j = 0; j < m[i].length; j++)
+        for (int i = 0; i < m.length; i++) {
+            for (int j = 0; j < m[i].length; j++) {
                 m[i][j] = input.nextInt();
+            }
+        }
         return m;
     }
 
@@ -27,13 +29,17 @@ public class Ex8_29_IdenticalArrays {
         int[] a = new int[m1.length * m1[0].length];
         int[] b = new int[m2.length * m2[0].length];
         int k = 0;
-        for (int[] row : m1)
-            for (int n : row)
+        for (int[] row : m1) {
+            for (int n : row) {
                 a[k++] = n;
+            }
+        }
         k = 0;
-        for (int[] row : m2)
-            for (int n : row)
+        for (int[] row : m2) {
+            for (int n : row) {
                 b[k++] = n;
+            }
+        }
         Arrays.sort(a);
         Arrays.sort(b);
         return Arrays.equals(a, b);
