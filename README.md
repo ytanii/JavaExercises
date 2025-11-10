@@ -25,4 +25,4 @@ For example:
 - [x] Chapter 5  
 - [x] Chapter 6  
 - [x] Chapter 7
-- [ ] Chapter 8
+- [x] Chapter 8
