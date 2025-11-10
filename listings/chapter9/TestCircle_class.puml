@@ -1,0 +1,28 @@
+@startuml
+'https://plantuml.com/class-diagram
+top to bottom direction
+
+
+class Circle{
+radius : double
+Circle()
+Circle(newRadius: double)
+getArea(): double
+getPerimeter(): double
+setRadius(newRadius: double) : void
+}
+object "circle1: Circle" {
+radius = 1
+}
+object "circle2: Circle" {
+radius = 25
+}
+object "circle3: Circle" {
+radius = 125
+}
+
+
+Circle -[hidden]-> "circle1: Circle"
+Circle -[hidden]-> "circle2: Circle"
+Circle -[hidden]-> "circle3: Circle"
+@enduml
