@@ -1,0 +1,44 @@
+@startuml
+'https://plantuml.com/class-diagram
+allowmixing
+
+class Circle{
+radius: double
+<u>numberOfObjects: int
+<u>getNumberOfObjects(): int
+getArea(): double
+
+
+}
+
+object "circle1: Circle"{
+radius = 1
+<u>numberOfObjects = 2
+
+}
+object "circle2: Circle"{
+radius = 1
+<u>numberOfObjects = 2
+
+}
+
+rectangle "1" as R1
+rectangle "2" as R2
+rectangle "5" as R3
+Circle -down-> "circle1: Circle" : instantiate
+Circle -down-> "circle2: Circle" : instantiate
+
+"circle1: Circle" -down-> R1
+"circle2: Circle" -down-> R3
+"circle1: Circle" -down-> R2
+"circle2: Circle" -down-> R2
+
+note right of R1  : radius
+note right of R2  : numberOfObjects
+note right of R3  : radius
+
+
+
+
+
+@enduml
