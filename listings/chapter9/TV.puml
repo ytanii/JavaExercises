@@ -1,0 +1,33 @@
+@startuml
+skinparam linetype ortho
+
+class TV {
+channel : int
+volumeLevel : int
+on : boolean
+  +TV()
+  +turnOn() : void
+  +turnOff() : void
+  +setChannel(newChannel : int) : void
+  +setVolume(newVolumeLevel : int) : void
+  +channelUp() : void
+  +channelDown() : void
+  +volumeUp() : void
+  +volumeDown() : void
+}
+
+object tv1 {
+  channel = 30
+  volumeLevel = 3
+}
+
+object tv2 {
+  channel = 3
+  volumeLevel = 2
+}
+
+TV -[hidden]-> tv1
+TV -[hidden]-> tv2
+
+top to bottom direction
+@enduml
