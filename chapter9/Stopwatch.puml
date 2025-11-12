@@ -1,0 +1,16 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Stopwatch{
+-startTime: long
+-endTime: long
+
++Stopwatch()
++getStartTime(): long
++getEndTime(): long
++start(): void
++stop(): void
++getElapsedTime(): long
+}
+
+@enduml
