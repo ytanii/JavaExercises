@@ -1,0 +1,25 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+class Account{
+-id: int
+-balance: double
+-<u>annualInterestRate: double
+-dateCreated: Date
+
++Account()
++Account(id: int, balance: double)
++getId(): int
++getBalance(): double
++<u>getAnnualInterestRate(): double
++setId(id: int): void
++setBalance(balance: double): void
++<u>setAnnualInterestRate(annualInterestRate: double)
++getDateCreated(): Date
++getMonthlyInterestRate(): double
++getMonthlyInterest(): double
++withdraw(amount: double): void
++deposit(amount: double): void
+}
+@enduml
