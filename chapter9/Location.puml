@@ -1,0 +1,12 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Location{
++row: int
++column: int
++maxValue: double
+
++<u>locateLargest(a: double[][]): Location
+}
+
+@enduml
