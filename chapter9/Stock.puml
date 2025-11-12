@@ -1,0 +1,31 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Stock{
+-symbol: String
+-name: String
+-previousClosingPrice: double
+-currentPrice: double
+
++Stock(symbol: String, name: String, previousClosingPrice: double)
++getPreviousClosingPrice(): double
++getCurrentPrice(): double
++getName(): String
++getSymbol(): String
++setCurrentPrice(currentPrice: double): void
++getChangePercent(): double
+
+}
+
+object "stock1: Stock" as stock1{
+symbol = "ORCL"
+name = "Oracle Corporation"
+previousClosingPrice = 34.5
+currentPrice = 34.35
+}
+note left of stock1::currentPrice{
+   set later by setCurrentPrice()
+}
+Stock -down[hidden]-> stock1
+
+@enduml
