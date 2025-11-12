@@ -6,6 +6,8 @@ class Rectangle{
 
 +Rectangle()
 +Rectangle(width: double, height: double)
++getWidth(): double
++getHeight(): double
 +getArea(): double
 +getPerimeter(): double
 
