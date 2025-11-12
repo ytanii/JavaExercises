@@ -1,0 +1,28 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Fan{
+-<u> SLOW: int
+-<u> MEDIUM: int
+-<u> FAST: int
+-speed: int
+-on: boolean
+-radius: double
+-color: String
+
++Fan()
++getSpeed(): int
++isOn(): boolean
++getRadius(): double
++getColor(): String
++setSpeed(speed: int): void
++setOn(on: boolean): void
++setRadius(radius: double): void
++setColor(color: String): void
++toString(): String
+
+
+
+}
+
+@enduml
