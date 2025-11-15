@@ -1,7 +1,7 @@
 public class Listing10_07_TestStackOfIntegers {
     public static void main(String[] args){
         StackOfIntegers stack = new StackOfIntegers();
-        for(int i = 0; i < 1000; i++){
+        for(int i = 0; i < 10; i++){
             stack.push(i);
         }
 
