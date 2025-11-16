@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Time{
+-hour: int
+-minute: int
+-second: int
++Time()
++Time(elapseTime: long)
++Time(hour: int, minute: int, second: int)
++getHour(): int
++getMinute(): int
++getSecond(): int
++setTime(elapseTime: long): void
+}
+
+@enduml
