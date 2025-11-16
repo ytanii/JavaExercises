@@ -11,6 +11,14 @@ public class MyPoint {
         this.y = y;
     }
 
+    public double getX() {
+        return this.x;
+    }
+
+    public double getY() {
+        return this.y;
+    }
+
     public double distance(MyPoint point) {
         return Math.sqrt(Math.pow(point.x - this.x, 2) + Math.pow(point.y - this.y, 2));
     }
@@ -19,7 +27,7 @@ public class MyPoint {
         return Math.sqrt(Math.pow(x - this.x, 2) + Math.pow(y - this.y, 2));
     }
 
-    public static double distance(MyPoint point1, MyPoint point2){
+    public static double distance(MyPoint point1, MyPoint point2) {
         return Math.sqrt(Math.pow(point2.x - point1.x, 2) + Math.pow(point2.y - point1.y, 2));
     }
 
