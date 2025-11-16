@@ -9,7 +9,7 @@ public class Ex10_03_MyInteger {
         MyInteger n3 = new MyInteger(17);
 
         System.out.println(n1.getValue());
-        System.out.println(n2.getValue()); // 24
+        System.out.println(n2.getValue());
 
         System.out.println("n1 isEven:  " + n1.isEven());
         System.out.println("n1 isOdd:   " + n1.isOdd());
@@ -33,11 +33,10 @@ public class Ex10_03_MyInteger {
         System.out.println("isOdd(n1):  " + MyInteger.isOdd(n1));
         System.out.println("isPrime(n1): " + MyInteger.isPrime(n1));
 
-        
+
         char[] arr = {'3', '7', '2', '1'};
         System.out.println(MyInteger.parseInt(arr));
 
-        System.out.println("\nTesting parseInt(String):");
         System.out.println(MyInteger.parseInt("4926"));
 
 
