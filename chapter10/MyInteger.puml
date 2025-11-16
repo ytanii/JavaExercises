@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class MyInteger{
+-value: int
++MyInteger(value: int)
++getValue(): int
++isEven(): boolean
++isOdd(): boolean
++isPrime(): boolean
++<u>isEven(value: int): boolean
++<u>isOdd(value: int): boolean
++<u>isPrime(value: int): boolean
++<u>isEven(value: MyInteger): boolean
++<u>isOdd(value: MyInteger): boolean
++<u>isPrime(value: MyInteger): boolean
++equals(value: int): boolean
++equals(value: myInteger): boolean
++<u>parseInt(charArray: char[]): int
++parseInt(String): int
+
+}
+
+@enduml
