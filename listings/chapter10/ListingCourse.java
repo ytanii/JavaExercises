@@ -1,9 +1,9 @@
-public class Course {
+public class ListingCourse {
     private String courseName;
     private String[] students;
     private int numberOfStudents;
 
-    public Course(String courseName) {
+    public ListingCourse(String courseName) {
         this.courseName = courseName;
         this.numberOfStudents = 0;
         this.students = new String[this.numberOfStudents];

@@ -3,8 +3,8 @@ import java.util.Arrays;
 public class Listing10_05_TestCourse {
     public static void main(String[] args) {
 
-        Course course1 = new Course("Data Structures");
-        Course course2 = new Course("Database Systems");
+        ListingCourse course1 = new ListingCourse("Data Structures");
+        ListingCourse course2 = new ListingCourse("Database Systems");
 
         course1.addStudent("Peter Jones");
         course1.addStudent("Kim Smith");
