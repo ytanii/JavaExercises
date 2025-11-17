@@ -72,4 +72,38 @@ public class MyRectangle2D {
         }
         return true;
     }
+
+    public static MyRectangle2D getRectangle(double[][] points) {
+        double minX = points[0][0];
+        double maxX = points[0][0];
+        double minY = points[0][1];
+        double maxY = points[0][1];
+
+
+        for (int i = 1; i < points.length; i++) {
+            double x = points[i][0];
+            double y = points[i][1];
+
+            if (x < minX) {
+                minX = x;
+            }
+            if (x > maxX) {
+                maxX = x;
+            }
+            if (y < minY) {
+                minY = y;
+            }
+            if (y > maxY) {
+                maxY = y;
+            }
+        }
+
+        double width = maxX - minX;
+        double height = maxY - minY;
+        double centerX = maxX - ((maxX - minX) / 2.0);
+        double centerY = maxY - ((maxY - minY) / 2.0);
+
+        return new MyRectangle2D(centerX, centerY, width, height);
+
+    }
 }
