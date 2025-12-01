@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Ex10_09_Course {
@@ -24,9 +25,9 @@ public class Ex10_09_Course {
 
         System.out.println("Number of students in course1: "
                 + course1.getNumberOfStudents());
-        String[] students = course1.getStudents();
-        for (int i = 0; i < students.length; i++) {
-            System.out.print(students[i] + ", ");
+        ArrayList<String> students = course1.getStudents();
+        for (int i = 0; i < students.size(); i++) {
+            System.out.print(students.get(i) + ", ");
         }
 
         System.out.println();
@@ -34,11 +35,11 @@ public class Ex10_09_Course {
                 + course2.getNumberOfStudents());
 
         course1.dropStudent("S1");
-        System.out.println("Number of students in course1: "
+        System.out.println(" Number of students in course1: "
                 + course1.getNumberOfStudents());
         students = course1.getStudents();
         for (int i = 0; i < course1.getNumberOfStudents(); i++) {
-            System.out.print(students[i] + (i < course1.getNumberOfStudents() - 1 ? ", " : " "));
+            System.out.print(students.get(i) + (i < course1.getNumberOfStudents() - 1 ? ", " : " "));
         }
 
         course1.clear();
