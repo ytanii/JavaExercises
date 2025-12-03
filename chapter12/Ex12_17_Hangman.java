@@ -7,7 +7,7 @@ public class Ex12_17_Hangman {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        File file = new File("chapter12/words.txt");
+        File file = new File("chapter12/files/words.txt");
         String[] words = readWordsFromFile(file);
         StringBuilder gameWordState = new StringBuilder();
 
