@@ -32,7 +32,6 @@ public class Ex12_20_RemovePackageStatement {
                 removePackageStatement(file);
             } else if (file.getName().endsWith(".java")) {
                 try {
-                    // Read original file
                     ArrayList<String> lines = new ArrayList<>();
                     Scanner scanner = new Scanner(file);
                     while (scanner.hasNextLine()) {
@@ -40,12 +39,10 @@ public class Ex12_20_RemovePackageStatement {
                     }
                     scanner.close();
 
-                    // Remove package statement if it exists in the first line
                     if (!lines.isEmpty() && lines.get(0).startsWith("package ")) {
                         lines.remove(0);
                     }
 
-                    // Write back to the file
                     PrintWriter writer = new PrintWriter(file);
                     for (String line : lines) {
                         writer.println(line);

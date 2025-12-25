@@ -6,7 +6,7 @@ public class Ex12_21_DataSorted {
     public static void main(String[] args) {
 
         ArrayList<String> list = new ArrayList<>();
-        File file = new File("chapter12/SortedStrings.txt");
+        File file = new File("chapter12/files/SortedStrings.txt");
         try (Scanner scanner = new Scanner(file)) {
 
             while (scanner.hasNext()) {
