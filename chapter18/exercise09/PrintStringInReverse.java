@@ -2,7 +2,7 @@ package exercise09;
 
 import java.util.Scanner;
 
-public class PrintCharacterInReverse {
+public class PrintStringInReverse {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
