@@ -2,8 +2,6 @@ package exercise10;
 
 import java.util.Scanner;
 
-import java.util.Scanner;
-
 public class OccurrencesOfCharacter {
 
     public static void main(String[] args) {
