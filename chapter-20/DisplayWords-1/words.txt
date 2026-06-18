@@ -1,0 +1,7 @@
+Banana apple zebra
+  42start shouldNotStartWithNumber
+  Orange orange APPLE
+
+  hello, world! Java java
+  can't end. dog cat
+  123abc _hidden Alpha beta.
