@@ -22,5 +22,15 @@ public class SetOperations{
         union.addAll(linkedHashSet2);
 
         System.out.println("The union of the two sets is " + union);
+
+        Set<String> difference = new LinkedHashSet<>(linkedHashSet1);
+        difference.removeAll(linkedHashSet2);
+
+        System.out.println("The difference of the two sets is " + difference);
+
+        Set<String> intersection = new LinkedHashSet<>(linkedHashSet2);
+        intersection.retainAll(linkedHashSet2);
+
+        System.out.println("The intersection of the two sets is " + intersection);
     }
 }
