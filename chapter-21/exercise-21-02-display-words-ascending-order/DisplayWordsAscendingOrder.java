@@ -5,7 +5,12 @@ import java.util.TreeSet;
 public class DisplayWordsAscendingOrder {
 
     public static void main(String[] args) {
-
+        if (args.length != 1) {
+            System.out.println(
+                "Usage: java DisplaysWordsAscendingOrder textFileName"
+            );
+            System.exit(1);
+        }
 
         String fileName = args[0];
 
@@ -17,31 +22,31 @@ public class DisplayWordsAscendingOrder {
 
             System.out.println("\n\nDisplay words in ascending order");
             TreeSet<String> sortedSet = getSortedSet(file);
-            sortedSet.forEach((String word) -> System.out.print(word + " "));
+            sortedSet.forEach(word -> System.out.print(word + " "));
         } catch (Exception e) {
             System.out.println("File does not exist");
         }
     }
 
     public static void printFileContents(File file) throws Exception {
-        Scanner scanner = new Scanner(file);
-        while (scanner.hasNextLine()) {
-            System.out.print(scanner.nextLine());
+        try (Scanner scanner = new Scanner(file)) {
+            while (scanner.hasNextLine()) {
+                System.out.println(scanner.nextLine());
+            }
         }
-
-        scanner.close();
     }
 
     public static TreeSet<String> getSortedSet(File file) throws Exception {
-        Scanner scanner = new Scanner(file);
         TreeSet<String> sortedSet = new TreeSet<>();
 
-        while (scanner.hasNext()) {
-            String word = scanner.next();
-            sortedSet.add(word);
+        try (Scanner scanner = new Scanner(file)) {
+            while (scanner.hasNext()) {
+                String word = scanner.next().replaceAll("[^a-zA-Z]", "");
+                if (!word.isEmpty()) {
+                    sortedSet.add(word);
+                }
+            }
         }
-
-        scanner.close();
 
         return sortedSet;
     }
